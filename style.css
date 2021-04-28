@@ -1,5 +1,6 @@
 body{
     text-align: center;
+    font-family: 'Original Surfer', cursive;
 }
 
 #TBL-Image{
@@ -56,13 +57,14 @@ h3{
 }
 
 h1{
+   font-family: 'Original Surfer', cursive;
     font-size: 40px
 }
 
 .menu{
 z-index: 10;
 list-style: none;
-position: absolute;
+position: fixed;
 right: 20px;
 cursor: pointer;
 }
@@ -76,5 +78,26 @@ font-size: 25px;
 }
 
 .links:hover{
-    background-color: cornflowerblue;
+background-color: cornflowerblue;
+}
+
+html{
+scroll-behavior: smooth;
+}
+
+a{
+text-decoration: none;
+}
+
+.articles:hover{
+color: cornflowerblue;
+}
+
+.WebsiteImage1{
+width: 850px;
+height: 480;
+}
+
+.WebsiteImage2{
+width: 850px;
 }
