@@ -65,12 +65,15 @@ h1{
 z-index: 10;
 list-style: none;
 position: fixed;
-right: 20px;
+top: 0;
 cursor: pointer;
+width: 100%;
+background-color: white;
+margin-top: 0px;
 }
 
 .links{
-float: left;
+display: inline;
 padding: 20px; 
 color: aliceblue;
 font-family: 'Oswald', sans-serif;
@@ -78,7 +81,8 @@ font-size: 25px;
 }
 
 .links:hover{
-background-color: cornflowerblue;
+text-decoration: underline;
+font-size: 30px;
 }
 
 html{
@@ -101,3 +105,18 @@ height: 480;
 .WebsiteImage2{
 width: 850px;
 }
+
+h1{
+text-shadow: 2px 2px #6495ed;
+}
+
+#welcome h1{
+text-shadow: none;
+}
+
+#contact h3{
+display: inline;
+font-size: 20px;
+}
+
+
