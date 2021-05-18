@@ -8,21 +8,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"> </script>
 </head>
 
 <body>
 
-    <center>
-        <ul class="menu">
-            <li class="links"><a href="#welcome"> Home </a> </li>
-            <li class="links"> <a href="#videos"> My Videos</a> </li>
-            <li class="links"> <a href="#work"> Work </a> </li>
-            <li class="links"> <a href="#writings">Writings </a> </li>
-            <li class="links"> <a href="#contact"> Contact </a> </li>
+    <nav class="nav navbar-inverse" id="my-navbar">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://aarushi1609.github.io/My-Portfolio/"> Aarushi Vora </a>
+        </div>
+        <div class="collapse navbar-collapse" id="menu">
+        <ul class="nav navbar-nav">
+            <li><a href="#welcome"> Home </a> </li>
+            <li><a href="#videos"> My Videos</a> </li>
+            <li><a href="#work"> Work </a> </li>
+            <li><a href="#writings">Writings </a> </li>
+            <li><a href="#contact"> Contact </a> </li>
         </ul>
-    </center>
+    </div>
+
+    </nav>
 
 
+    
     <section id="welcome">
         <div class="Division">
             <img id="TBL-Image" src="Sir_Tim_Berners-Lee.jpg">
@@ -33,7 +49,7 @@
     </section>
 
     <section id="bio">
-        <h1> Hi!</h1>
+        <h1 class="heading1"> Hi!</h1>
         <div class="line"></div>
         <div class="information">
             <p> Tim Berners-Lee is a software engineer who invented the Internet (or the World Wide Web) in 1989 while at CERN, the European Particle Physics Laboratory. He is director of the World Wide Web Consortium that he founded and a Professor in the Computer Science Department at the University of Oxford.
@@ -43,7 +59,7 @@
     </section>
 
     <section id="videos">
-        <h1> Videos </h1>
+        <h1 class="heading1"> Videos </h1>
         <div class="line"></div>
         <iframe width="850" height="480" src="https://www.youtube.com/embed/OM6XIICm_qo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <br>
@@ -54,13 +70,13 @@
     </section>
 
     <section id="work">
-        <h1> Work </h1>
+        <h1 class="heading1"> Work </h1>
         <div class="line"></div>
         <iframe width="850" height="400" src="https://en.wikipedia.org/wiki/Tim_Berners-Lee#Career_and_research" frameborder="0"></iframe>
     </section>
 
     <section id="writings">
-        <h1> Writing </h1>
+        <h1 class="heading1"> Writing </h1>
         <div class="line"></div>
         <a class="articles" href="https://webfoundation.org/2019/03/web-birthday-30/" target="_blank">
             30 years on, what’s next #ForTheWeb?: Tim Berners-Lee
@@ -77,17 +93,27 @@
     </section>
 
     <section id="contact">
-        <h1> Contact Us </h1>
+        <h1 class="heading1"> Contact Us </h1>
         <div class="line"></div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7540.824631698994!2d72.86123703488771!3d19.08955950000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c85099bd2947%3A0x1ecc1a60c474a8ae!2sChhatrapati%20Shivaji%20Maharaj%20International%20Airport!5e0!3m2!1sen!2sin!4v1620031355216!5m2!1sen!2sin" width="850" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         <br>
         <br>
-        <div id="contact1">
+        <div id="contact1" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=aarushi.vora@gmail.com" target="_blank"> <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;
                 <h3> Contact Aarushi Vora:
                     aarushi.vora@gmail.com
                 </h3>
             </a>
+        </div>
+        <br> <br>
+        <div class="contact2 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <form>      
+            <span> Name:</span> &nbsp;&nbsp;&nbsp;<input type="text" name="name" required>
+            <br> <br>
+            <span> Comment:</span> &nbsp;&nbsp;&nbsp;<input type="text" name="name" required>
+            <br> <br>
+            <input type="Submit" value="Submit" class="btn btn-info">
+            </form>
         </div>
 
     </section>
